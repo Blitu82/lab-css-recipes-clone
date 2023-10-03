@@ -5,11 +5,22 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -17,8 +28,70 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 /*  Set the font */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 /* STYLES */
 /* Write your CSS below */
+
+.image-container {
+  height: 600px;
+  background-image: url(/images/apple-pie.jpg);
+  background-size: cover;
+}
+
+#text-overlay {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  font-size: 80px;
+  color: white;
+}
+
+.top-section {
+  display: flex;
+  margin: 40px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mid-section {
+  display: flex;
+  margin: 40px;
+  flex-direction: column;
+  position: relative;
+}
+
+.mid-section h2 {
+  text-align: left;
+}
+
+.mid-section ul {
+  list-style-type: '- ';
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.bottom-section {
+  display: flex;
+  margin: 40px;
+  flex-direction: column;
+}
+
+.bottom-section ol {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.gray-line {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+
+.common-image {
+  max-width: 30%;
+  height: auto;
+  margin: 20px auto;
+}
